@@ -17,7 +17,11 @@ public class TouchController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0))
+        {
+            pastPosition = Input.mousePosition;
+        }
+        else if (Input.GetMouseButton(0))
         {
             Move(Input.mousePosition.x - pastPosition.x);
         }
