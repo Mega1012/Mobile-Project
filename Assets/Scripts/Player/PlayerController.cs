@@ -4,6 +4,7 @@ using UnityEngine;
 using Plataformer.Core.Singleton;
 using TMPro;
 using DG.Tweening;
+using System;
 
 public class PlayerController : Singleton<PlayerController>
 {
@@ -25,6 +26,9 @@ public class PlayerController : Singleton<PlayerController>
 
     [Header("TextMeshPro")]
     public TextMeshPro uiTextPowerUp;
+
+    [Header("Coin Setup")]
+    public GameObject coinCollector;
 
     //privates
     private bool _canRun;
@@ -113,6 +117,12 @@ public class PlayerController : Singleton<PlayerController>
     public void ResetHeight()
     {
         transform.DOMoveY(_startPosition.y, .1f);
+    }
+
+    
+    public void ChangeCoinCollectorSize(float amount)
+    {
+        coinCollector.transform.localScale = Vector3.one * amount;
     }
     #endregion
 }
