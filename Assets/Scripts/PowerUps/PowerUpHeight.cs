@@ -15,6 +15,7 @@ public class PowerUpHeight : PowerUpBase
     {
         base.StartPowerUp();
         PlayerController.instance.ChangeHeight(amountHeight, duration, animationDuration, ease);
+        PlayerController.instance.SetPowerUpText("Flying");
     }
 
     protected override void EndPowerUp()
