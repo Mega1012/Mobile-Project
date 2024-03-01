@@ -10,16 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1f9f979465628134b84794185b9b29c8, type: 3}
-  m_Name: Level_01
+  m_Name: New Level Piece Based Setup
   m_EditorClassIdentifier: 
-  ArtType: 0
   LevelPiecesStart:
-  - {fileID: 2939543309491206724, guid: fcccb0df32874d04ebbb01ef8c6b15ae, type: 3}
+  - {fileID: 0}
   LevelPieces:
-  - {fileID: 2939543309491206724, guid: 1d2143bcd8c81c44eb2174df14d09861, type: 3}
-  - {fileID: 3922149197274630247, guid: 767b7a71eb1719041979230164b58edc, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
   LevelPiecesEnd:
-  - {fileID: 2939543309491206724, guid: 6fb80aca96bfc7f4b81f29550b700177, type: 3}
+  - {fileID: 0}
   piecesStartNumber: 3
   piecesNumber: 5
   piecesEndNumber: 1
