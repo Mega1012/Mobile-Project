@@ -1,6 +1,8 @@
 
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class LevelManager : MonoBehaviour
@@ -83,7 +85,7 @@ public class LevelManager : MonoBehaviour
 
     private void CreateLevelPiece(List<LevelPieceBase> list)
     {
-        var piece = list[Random.Range(0, list.Count)];
+        var piece = list[(new System.Random()).Next(0, list.Count)];
         var SpawnedPiece = Instantiate(piece, container);
 
         if(_spawnedPieces.Count > 0)
@@ -99,7 +101,7 @@ public class LevelManager : MonoBehaviour
 
         foreach(var p in SpawnedPiece.GetComponentsInChildren<ArtPiece>())
         {
-            p.ChangePiece(ArtManager.instance.GetSetupByType(_currSetup.ArtType).gameObject);
+            p.ChangePiece(ArtManager.instance.GetSetupByType(_currSetup.ArtType).First().gameObject);
         }
 
         _spawnedPieces.Add(SpawnedPiece);
