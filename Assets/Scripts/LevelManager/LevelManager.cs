@@ -1,4 +1,3 @@
-
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -30,12 +29,12 @@ public class LevelManager : MonoBehaviour
 
     private void SpawnNextLevel()
     {
-        if(_currentLevel != null)
+        if (_currentLevel != null)
         {
             Destroy(_currentLevel);
             _index++;
 
-            if(_index >= levels.Count)
+            if (_index >= levels.Count)
             {
                 ResetLevelIndex();
             }
@@ -55,18 +54,18 @@ public class LevelManager : MonoBehaviour
     {
         CleanSpawnedPieces();
 
-        if (_currSetup != null )
+        if (_currSetup != null)
         {
             _index++;
-            if(_index >= levelPieceBasedSetups.Count)
+            if (_index >= levelPieceBasedSetups.Count)
             {
-                ResetLevelIndex() ;
+                ResetLevelIndex();
             }
         }
 
         _currSetup = levelPieceBasedSetups[_index];
 
-        for ( int i = 0; i < _currSetup.piecesStartNumber; i++ )
+        for (int i = 0; i < _currSetup.piecesStartNumber; i++)
         {
             CreateLevelPiece(_currSetup.LevelPiecesStart);
         }
@@ -88,7 +87,7 @@ public class LevelManager : MonoBehaviour
         var piece = list[(new System.Random()).Next(0, list.Count)];
         var SpawnedPiece = Instantiate(piece, container);
 
-        if(_spawnedPieces.Count > 0)
+        if (_spawnedPieces.Count > 0)
         {
             var lastPiece = _spawnedPieces[_spawnedPieces.Count - 1];
 
@@ -99,10 +98,9 @@ public class LevelManager : MonoBehaviour
             SpawnedPiece.transform.localPosition = Vector3.zero;
         }
 
-        foreach(var p in SpawnedPiece.GetComponentsInChildren<ArtPiece>())
+        foreach (var p in SpawnedPiece.GetComponentsInChildren<ArtPiece>())
         {
-            
-            p.ChangePiece(ArtManager.instance.GetSetupByType(_currSetup.ArtType).gameObject); 
+            p.ChangePiece(ArtManager.instance.GetSetupByType(_currSetup.ArtType).gameObject);
         }
 
         _spawnedPieces.Add(SpawnedPiece);
@@ -110,14 +108,14 @@ public class LevelManager : MonoBehaviour
 
     private void CleanSpawnedPieces()
     {
-        for(int i = _spawnedPieces.Count - 1; i >= 0; i--)
+        for (int i = _spawnedPieces.Count - 1; i >= 0; i--)
         {
             Destroy(_spawnedPieces[i].gameObject);
         }
 
         _spawnedPieces.Clear();
     }
-    
+
     IEnumerator CreateLevelPiecesCorroutine()
     {
         _spawnedPieces = new List<LevelPieceBase>();
