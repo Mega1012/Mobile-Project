@@ -308,8 +308,8 @@ MonoBehaviour:
   - {fileID: 7170808555552067824, guid: 58f03f2c5629dd04fba35b02017d7e81, type: 3}
   - {fileID: 7170808555552067824, guid: d0f021e005f3bca448ac53be6f818e50, type: 3}
   levelPieceBasedSetups:
-  - {fileID: 11400000, guid: 1356dce32b3461640bec263f2f6ac3d5, type: 2}
   - {fileID: 11400000, guid: 900ab4eb99d5c4c47b883ce075a8bd77, type: 2}
+  - {fileID: 11400000, guid: 1356dce32b3461640bec263f2f6ac3d5, type: 2}
   timeBetweenPieces: 0.3
   _index: 0
 --- !u!1 &63887041
@@ -2506,9 +2506,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   artSetups:
   - artType: 0
-    gameObject: {fileID: 5812644527325158926, guid: 4b90922cafdf348408f8355ebd6b88ac, type: 3}
-  - artType: 1
     gameObject: {fileID: 3286529037713028302, guid: d16c59a0f8272a04cb5ab3a8b401ce01, type: 3}
+  - artType: 1
+    gameObject: {fileID: 5812644527325158926, guid: 4b90922cafdf348408f8355ebd6b88ac, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
