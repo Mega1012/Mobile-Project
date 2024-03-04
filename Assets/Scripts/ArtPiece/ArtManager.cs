@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Plataformer.Core.Singleton;
@@ -9,16 +8,14 @@ public class ArtManager : Singleton<ArtManager>
     {
         Type_01,
         Type_02,
-        BEACH,
-        SNOW,
     }
 
     public List<ArtSetup> artSetups;
 
+    
     public ArtSetup GetSetupByType(ArtType artType)
     {
         return artSetups.Find(i => i.artType == artType);
-
     }
 }
 

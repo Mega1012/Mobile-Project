@@ -12,7 +12,7 @@ public class LevelPieceBasedSetup : ScriptableObject
     public List<LevelPieceBase> LevelPieces;
     public List<LevelPieceBase> LevelPiecesEnd;
 
-    public int piecesStartNumber = 3;
+    public int piecesStartNumber = 1;
     public int piecesNumber = 5;
     public int piecesEndNumber = 1;
 }
