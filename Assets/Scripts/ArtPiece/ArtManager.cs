@@ -8,6 +8,7 @@ public class ArtManager : Singleton<ArtManager>
     {
         Type_01,
         Type_02,
+        Type_03,
     }
 
     public List<ArtSetup> artSetups;

@@ -214,7 +214,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3dc26432c5351864fb4bb2f3bb427870, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -306,6 +306,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2958721770255022873, guid: 116b98afb54294a44b6e5468af74045e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 29ec94c9c0e801045b421df7b93343d9, type: 2}
     - target: {fileID: 4934335154283864673, guid: 116b98afb54294a44b6e5468af74045e, type: 3}
       propertyPath: m_Name
       value: ArtPiece_01
@@ -368,6 +372,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2958721770255022873, guid: 116b98afb54294a44b6e5468af74045e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 29ec94c9c0e801045b421df7b93343d9, type: 2}
     - target: {fileID: 4934335154283864673, guid: 116b98afb54294a44b6e5468af74045e, type: 3}
       propertyPath: m_Name
       value: ArtPiece_01 (1)
@@ -616,6 +624,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2958721770255022873, guid: 116b98afb54294a44b6e5468af74045e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 29ec94c9c0e801045b421df7b93343d9, type: 2}
     - target: {fileID: 4934335154283864673, guid: 116b98afb54294a44b6e5468af74045e, type: 3}
       propertyPath: m_Name
       value: ArtPiece_01 (2)
@@ -802,6 +814,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2958721770255022873, guid: 116b98afb54294a44b6e5468af74045e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 29ec94c9c0e801045b421df7b93343d9, type: 2}
     - target: {fileID: 4934335154283864673, guid: 116b98afb54294a44b6e5468af74045e, type: 3}
       propertyPath: m_Name
       value: ArtPiece_01 (3)
