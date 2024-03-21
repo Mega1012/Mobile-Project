@@ -48,6 +48,12 @@ public class PlayerController : Singleton<PlayerController>
         ResetSpeed();
     }
 
+    public void Bounce2()
+    {
+
+        transform.DOScale(1.2f, .2f).SetEase(Ease.OutBack).SetLoops(2, LoopType.Yoyo);
+    }
+
     public void Bounce()
     {
         if(_bounceHelper != null)
@@ -76,6 +82,7 @@ public class PlayerController : Singleton<PlayerController>
         {
             if (!invencible)
             {
+                Debug.Log("morreu");
                 MoveBack();
                 EndGame(AnimatorManager.AnimatorType.DEAD);
             }
@@ -84,8 +91,12 @@ public class PlayerController : Singleton<PlayerController>
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.transform.tag == tagToCheckFinishLine)
+        
+        
+
+        if (other.transform.tag == tagToCheckFinishLine)
         {
+            Debug.Log("Acabou");
             if (!invencible) EndGame();
         }
     }

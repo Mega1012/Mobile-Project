@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemColectablePlanets : ItemCollectableBase
+public class ItemColectablePlanets : ItemColectableBase
 {
     public Collider2D collider;
     protected override void OnCollect()

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemCollectableBase : MonoBehaviour
+public class ItemColectableBase : MonoBehaviour
 {
     public string compareTag = "Player";
     public ParticleSystem particleSystem;
@@ -11,13 +11,6 @@ public class ItemCollectableBase : MonoBehaviour
 
     [Header("Sounds")]
     public AudioSource audioSource;
-
-
-
-    private void Awake()
-    {
-       //if (particleSystem != null) particleSystem.transform.SetParent(null);
-    }
 
     private void OnTriggerEnter(Collider collision)
     {
